@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>nu.i.girl</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pink:#ffc8dd;     /* фон */
+      --berry:#a20f8f;    /* акцент бренду */
+      --white:#ffffff;
+      --shadow: rgba(0,0,0,.18);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      height:100svh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      background:var(--pink);
+      color:var(--white);
+      font-family:"Inter",system-ui,Segoe UI,Roboto,Arial,sans-serif;
+      text-align:center;
+      padding:24px;
+    }
+    h1{
+      margin:0 0 4px;
+      font-size:52px;
+      font-weight:800;
+      letter-spacing:-.5px;
+      text-transform:lowercase;
+    }
+    h2{
+      margin:0 0 26px;
+      font-size:18px;
+      font-weight:600;
+      opacity:.9;
+    }
+
+    /* кнопки */
+    .buttons{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      width:min(420px,100%);
+      align-items:center;
+    }
+    .cta{
+      width:100%;
+      padding:14px 20px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      display:inline-block;
+      transition:.2s ease;
+      box-shadow:0 8px 24px var(--shadow);
+    }
+    .cta.insta{
+      background:var(--white);
+      color:var(--berry);
+      border:2px solid var(--white);
+    }
+    .cta.direct{
+      background:transparent;
+      color:var(--white);
+      border:2px solid var(--white);
+      box-shadow:none;
+    }
+    .cta:hover{transform:translateY(-2px)}
+    .cta.direct:hover{background:rgba(255,255,255,.12)}
+
+    .footer{
+      position:fixed;
+      bottom:14px;
+      left:0; right:0;
+      font-size:12px;
+      opacity:.75;
+    }
+
+    /* адаптація */
+    @media (max-width:480px){
+      h1{font-size:40px}
+      h2{font-size:16px}
+    }
+  </style>
+</head>
+<body>
+  <h1>nu.i.girl</h1>
+  <h2>bags & accessories</h2>
+
+  <div class="buttons">
+    <a class="cta insta" href="https://www.instagram.com/nu.i.girl/" target="_blank" rel="noopener">
+      🛍️ Перейти в Instagram
+    </a>
+    <a class="cta direct" href="https://ig.me/m/nu.i.girl" target="_blank" rel="noopener">
+      💬 Написати в дірект
+    </a>
+  </div>
+
+  <div class="footer">© nu.i.girl 2025</div>
+</body>
+</html>
